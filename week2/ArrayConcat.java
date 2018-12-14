@@ -1,7 +1,7 @@
 /**
  * File: ArrayConcat.java
  * 
- * A rogram that will concatenate 2 arrays. 
+ * A program that will concatenate 2 arrays. 
  * 
  * @author Andrei Cirlan
  * 14 Dec 201812:25:31
