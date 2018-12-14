@@ -23,40 +23,40 @@ public class MinMaxAverageValues {
 	    int min = getMin(arrayInput1);
 	    System.out.println("Min: "+ min);
 	    
-	 // Calling getAverage() method for getting average value
+	    // Calling getAverage() method for getting average value
 	    float average = getAverage(arrayInput1);
 	    System.out.printf("Average: %.2f", average);
 	}
 	
 	// Method for getting the maximum value
-	  public static int getMax(int[] inputArray){ 
+	public static int getMax(int[] inputArray){ 
 	    int maxValue = inputArray[0]; 
 	    for(int i=1; i < inputArray.length; i++){ 
-	      if(inputArray[i] > maxValue){ 
-	         maxValue = inputArray[i]; 
-	      } 
+	    	if(inputArray[i] > maxValue){ 
+	    		maxValue = inputArray[i]; 
+	    	} 
 	    } 
 	    return maxValue; 
-	  }
+	}
 	 
-	  // Method for getting the minimum value
-	  public static int getMin(int[] inputArray){ 
+	// Method for getting the minimum value
+	public static int getMin(int[] inputArray){ 
 	    int minValue = inputArray[0]; 
 	    for(int i=1; i<inputArray.length; i++){ 
-	      if(inputArray[i] < minValue){ 
-	        minValue = inputArray[i]; 
-	      } 
-	    } 
+	        if(inputArray[i] < minValue){ 
+	        	minValue = inputArray[i]; 
+	        } 
+	    } 	
 	    return minValue; 
-	  } 
+	} 
 	  
 	// Method for getting the average value
-		  public static float getAverage(int[] inputArray){ 
-			int sum = 0;
-		    for(int i=1; i < inputArray.length; i++){     
-		         sum += inputArray[i];    
-		    } 
-		    float average = (float)sum /  inputArray.length; 
-		    return average; 
-		  }
+	public static float getAverage(int[] inputArray){ 
+		int sum = 0;
+		for(int i=1; i < inputArray.length; i++){     
+			sum += inputArray[i];    
+		} 
+		float average = (float)sum /  inputArray.length; 
+		return average; 
+	}
 }
